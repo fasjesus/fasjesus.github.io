@@ -1,0 +1,245 @@
+/* --- Variáveis de Cor (Paleta Roxa) --- */
+:root {
+    --bg-principal: #121214;
+    --bg-secundario: #202024;
+    --texto-principal: #E1E1E6;
+    --texto-secundario: #C4C4CC;
+    --destaque: #8257E5;
+    --destaque-hover: #996DFF;
+}
+
+/* --- Reset Básico e Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Para a rolagem suave dos links da nav */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 6rem 0; /* Espaçamento entre seções */
+}
+
+h1, h2 {
+    color: var(--texto-principal);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--destaque);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 2rem;
+}
+
+p {
+    color: var(--texto-secundario);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--destaque);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--destaque-hover);
+}
+
+/* --- Header / Navegação --- */
+header {
+    background-color: rgba(18, 18, 20, 0.8); /* Fundo com leve transparência */
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    border-bottom: 1px solid var(--bg-secundario);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--texto-secundario);
+    font-weight: 600;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--texto-principal);
+}
+
+/* --- Seção Início (Hero) --- */
+#inicio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inicio .highlight {
+    color: var(--destaque);
+}
+
+#inicio .subtitle {
+    font-size: 1.25rem;
+    color: var(--texto-secundario);
+}
+
+.social-links {
+    margin: 1.5rem 0;
+}
+
+.social-links a {
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* --- Botões --- */
+.btn {
+    display: inline-block;
+    background-color: var(--destaque);
+    color: #FFF;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-right: 0.5rem;
+}
+
+.btn:hover {
+    background-color: var(--destaque-hover);
+    color: #FFF;
+}
+
+.btn-outline {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--destaque);
+    border: 2px solid var(--destaque);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--destaque);
+    color: #FFF;
+}
+
+
+/* --- Seção Projetos (Cards) --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--bg-secundario);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--destaque);
+}
+
+.card h3 {
+    color: var(--texto-principal);
+    margin-bottom: 0.5rem;
+}
+
+.card .tags {
+    margin: 1rem 0;
+}
+
+.card .tags span {
+    background-color: var(--bg-principal);
+    color: var(--texto-secundario);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+}
+
+.card-links a {
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+/* --- Seção Contato --- */
+#contato {
+    text-align: center;
+}
+#contato p {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--bg-secundario);
+    color: var(--texto-secundario);
+}
+
+/* --- Efeito de Fade-in (JS) --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
