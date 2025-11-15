@@ -33,7 +33,7 @@ body {
 }
 
 section {
-    padding: 6rem 0; /* Espaçamento entre seções */
+    padding: 6rem 0; 
 }
 
 h1, h2 {
@@ -75,8 +75,8 @@ a:hover {
 
 /* --- Header / Navegação --- */
 header {
-    background-color: rgba(18, 18, 20, 0.8); /* Fundo com leve transparência */
-    backdrop-filter: blur(10px); /* Efeito de vidro */
+    background-color: rgba(18, 18, 20, 0.8); 
+    backdrop-filter: blur(10px); 
     border-bottom: 1px solid var(--bg-secundario);
     padding: 1rem 0;
     position: fixed;
@@ -189,7 +189,6 @@ nav ul li a:hover, nav ul li a.active {
     padding: 1.5rem;
     border: 1px solid transparent;
     transition: transform 0.3s ease, border-color 0.3s ease;
-    /* Adicionado para conter os elementos filhos */
     display: flex;
     flex-direction: column;
 }
@@ -218,7 +217,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .card-links {
-    margin-top: auto; /* Empurra os links para o final do card */
+    margin-top: auto;
     padding-top: 1rem;
 }
 
@@ -257,12 +256,6 @@ footer {
     transform: translateY(0);
 }
 
-/*
-=====================================================
---- NOVAS REGRAS: Estilos do "Ver Mais" para os Projetos ---
-=====================================================
-*/
-
 /* Remove a margem do parágrafo de introdução para o "Ver Mais" ficar mais perto */
 .project-intro {
     margin-bottom: 0;
@@ -273,7 +266,6 @@ footer {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    /* Transição suave */
     transition: max-height 0.5s ease-out, opacity 0.3s ease-out, margin-top 0.5s ease-out;
 }
 
@@ -287,12 +279,11 @@ footer {
     cursor: pointer;
 }
 
-/* --- ESTADO ATIVO (QUANDO O JS ADICIONA A CLASSE) --- */
+/* ESTADO ATIVO (QUANDO O JS ADICIONA A CLASSE) */
 
-/* Quando o card tiver a classe 'expanded', o conteúdo aparece */
 .card.expanded .project-more-info {
-    max-height: 1000px; /* Um valor alto para garantir que todo o texto caiba */
+    max-height: 1000px;
     opacity: 1;
-    margin-top: 1rem; /* Adiciona espaço quando está aberto */
+    margin-top: 1rem;
     transition: max-height 0.5s ease-in, opacity 0.5s 0.1s ease-in, margin-top 0.5s ease-in;
 }
