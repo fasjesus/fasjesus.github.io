@@ -1,0 +1,300 @@
+/* --- Variáveis de Cor (Paleta Roxa) --- */
+:root {
+  --bg-principal: #121214;
+  --bg-secundario: #202024;
+  --bg-card-claro: #323238;
+  --texto-principal: #e1e1e6;
+  --texto-secundario: #c4c4cc;
+  --destaque: #6f42d8;
+  --destaque-hover: #996dff;
+  --destaque-shadow: 0 0 25px 8px rgba(130, 87, 229, 0.4);
+}
+
+/* --- Estilos Globais --- */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/*
+  =====================================================
+  --- Lógica do "Salto" (Scroll Snap) ---
+  =====================================================
+  */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+#inicio,
+#projetos,
+#destaques, #contato, #tecnologias { 
+  scroll-snap-align: start;
+  scroll-margin-top: 4.5rem;
+}
+
+/* =====================================================
+  --- Estilos Personalizados (não-Tailwind) ---
+  =====================================================
+  */
+
+/* --- Estilo do Título da Seção (h2) --- */
+.titulo-secao {
+  color: var(--texto-principal);
+  font-size: 2rem; /* 40px */
+  font-weight: 600;
+  border-bottom: 3px solid var(--destaque);
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 2rem; /* 32px */
+}
+
+.font-sanchez {
+  font-family: "Sanchez", serif;
+}
+
+.font-codigo {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* --- Botão CTA (Roxo) --- */
+.btn-cta {
+  display: inline-block;
+  background-color: var(--destaque);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* pill shape */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.btn-cta:hover {
+  background-color: var(--destaque-hover);
+}
+
+/*
+  =====================================================
+  --- Estilos do CARROSSEL (Center Stage) ---
+  =====================================================
+  */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  cursor: grab;
+}
+
+.carousel-track.is-grabbing {
+  cursor: grabbing;
+  user-select: none;
+}
+
+/* Card (Estilo Base) */
+.card {
+  padding: 0; 
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-secundario);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  min-width: 95%;
+  min-height: 250px; 
+
+  /* Efeitos de Destaque */
+  transform: scale(0.9);
+  opacity: 0.6;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+
+  /* Tamanho e Espaçamento (Mobile) */
+  flex-shrink: 0;
+  flex-basis: 90%; 
+  min-width: 90%;  
+  margin: 0 0.5rem;
+}
+
+/* Card Ativo (Destaque) */
+.card.is-active {
+  transform: scale(1);
+  opacity: 1;
+  box-shadow: var(--destaque-shadow);
+  border-color: var(--destaque);
+}
+
+/* Estilo do Conteúdo Frontal */
+.card-front {
+    position: relative;
+    padding-bottom: 0rem;
+}
+
+/* Estilo do Conteúdo Traseiro (Descrição) */
+.card-back {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--bg-secundario);
+}
+
+/* Estado Ativado (Flip) */
+.card.is-flipped .card-front {
+    opacity: 0;
+    pointer-events: none;
+}
+.card.is-flipped .card-back {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.card h3 {
+  color: var(--texto-principal);
+  font-size: 1.25rem; 
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card .project-intro {
+  color: var(--texto-secundario);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .card .project-intro {
+    font-size: 1rem;
+  }
+}
+
+.card .tags {
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card .tags span {
+  background-color: var(--bg-principal);
+  color: var(--texto-secundario);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Estilos para Links do Carrossel (Posicionamento Absoluto) */
+.project-card-links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-secundario);
+  border-top: 1px solid var(--bg-principal);
+  z-index: 20;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  pointer-events: auto;
+}
+
+.project-card-links a,
+.cert-links a {
+  color: var(--destaque);
+  text-decoration: none;
+}
+.project-card-links a:hover,
+.cert-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para Links de Certificado (Links Simples, Estilo Destaque) */
+.cert-links {
+    font-weight: 600;
+}
+
+/* Botões do Carrossel */
+.carousel-btn {
+  background-color: var(--bg-secundario);
+  color: var(--texto-principal);
+  border: 1px solid var(--destaque);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-btn:hover {
+  opacity: 1;
+  background-color: var(--destaque);
+}
+
+.carousel-btn.prev-btn {
+  left: -15px;
+}
+.carousel-btn.next-btn {
+  right: -15px;
+}
+
+/* Media Query para Desktop */
+@media (min-width: 768px) {
+  .carousel-track > .card {
+    flex-basis: 450px;
+    min-width: 450px;
+    margin: 0 0.5rem;
+  }
+}
+
+/* --- Imagem de Destaque --- */
+.destaque-pic-retangular {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 2rem; 
+  border-top: 1px solid var(--bg-secundario);
+  color: var(--texto-secundario);
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin-top: 4rem; 
+  }
+}

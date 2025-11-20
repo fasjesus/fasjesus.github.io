@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flávia Alessandra - Desenvolvedora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sanchez:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              destaque: "var(--destaque)",
+              "bg-principal": "var(--bg-principal)",
+              "bg-secundario": "var(--bg-secundario)",
+              "bg-card-claro": "var(--bg-card-claro)",
+              "texto-principal": "var(--texto-principal)",
+              "texto-secundario": "var(--texto-secundario)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-bg-principal text-texto-principal">
+    
+    <header class="fixed top-0 left-0 w-full z-50 bg-bg-principal/80 backdrop-blur-md border-b border-bg-secundario">
+      <nav class="flex justify-center items-center h-16 max-w-6xl mx-auto px-4">
+        <ul class="flex gap-6 text-lg font-medium">
+          <li><a href="#inicio" class="text-texto-principal hover:text-destaque transition-colors">Início</a></li>
+          <li><a href="#projetos" class="text-texto-principal hover:text-destaque transition-colors">Projetos</a></li>
+          <li>
+            <a href="#contato" class="text-texto-principal hover:text-destaque transition-colors">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-col items-center w-full pt-28">
+      
+      <section id="inicio" class="w-full mb-40"> <div class="relative w-full bg-[#0F0F11] text-white overflow-hidden pt-12 pb-32 border-b border-white/5">
+    
+          <div class="absolute inset-0 z-0 opacity-20" 
+              style="background-image: radial-gradient(#8257E5 1px, transparent 1px); background-size: 24px 24px;">
+          </div>
+
+          <div class="absolute top-[-20%] left-[20%] w-96 h-96 bg-violet-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+          <div class="absolute bottom-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+
+          <div class="relative z-10 max-w-5xl mx-auto px-4 flex flex-col items-center text-center">
+            <div class="mb-6">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 backdrop-blur-md shadow-[0_0_10px_rgba(34,197,94,0.2)]">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                <span class="text-[10px] sm:text-xs font-bold tracking-widest uppercase text-green-400 font-mono">Open to Work</span>
+              </span>
+            </div>
+
+            <h1 class="text-3xl sm:text-6xl font-bold tracking-tight mb-3 text-texto-principal drop-shadow-lg">
+              Flávia Alessandra
+            </h1>
+
+            <div class="flex justify-center">
+                <a href="mailto:developerflavia@gmail.com" class="flex items-center gap-2 text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0l-7.172 6.953a2.25 2.25 0 0 1-3.156 0L2.25 6.75" />
+                    </svg> 
+                    developerflavia@gmail.com
+                </a>
+            </div>
+            
+            <!--<div class="flex flex-wrap justify-center gap-2 sm:gap-3 max-w-3xl opacity-90">
+              <span class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs sm:text-sm text-violet-200 font-mono">FullStack</span>
+              <span class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs sm:text-sm text-violet-200 font-mono">Mobile</span>
+              <span class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs sm:text-sm text-violet-200 font-mono">Web3</span>
+              <span class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs sm:text-sm text-violet-200 font-mono">Angular</span>
+              <span class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs sm:text-sm text-violet-200 font-mono">React-Native</span>
+              <span class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs sm:text-sm text-violet-200 font-mono">Node</span>
+            </div>-->
+
+          </div>
+        </div>
+
+        <div class="relative w-full max-w-4xl mx-auto px-4 -mt-20 z-20">
+          <div class="bg-[#1A1A1E] rounded-xl shadow-2xl p-6 sm:p-8 border border-white/10 backdrop-blur-sm">
+            
+            <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+              
+              <div class="flex-shrink-0 relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-full opacity-70 blur group-hover:opacity-100 transition duration-200"></div>
+                <img
+                  src="assets\images\perfil.png"
+                  alt="Flávia Alessandra"
+                  class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-gray-700 object-cover"
+                  onerror="this.src='https://placehold.co/150x150/8257E5/E1E1E6?text=Fl%C3%A1via'"
+                />
+              </div>
+
+              <div class="flex-1 text-center sm:text-left">
+                <!--<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                  <div class="flex items-center justify-center sm:justify-start gap-3">
+                    <span class="bg-violet-500/10 text-violet-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-violet-500/20">Dev Jr</span>
+                  </div>-->
+                  <div class="mb-6">
+                    <p class="text-destaque font-bold">Desenvolvedora Jr.</p>
+                  </div>
+                <!--</div>-->
+                
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-5">
+                  Graduanda em Ciência da Computação. 
+                        Minha competência foca em aplicar minha experiência em desenvolvimento de software FullStack
+                        para criar soluções robustas e inovadoras.  
+                </p>
+
+                <div class="flex flex-wrap justify-center sm:justify-start gap-3">
+                  
+                  <a href="assets\files\cv.pdf" download class="flex items-center gap-2 px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-700 text-white transition-all text-sm font-bold shadow-lg shadow-violet-500/20 hover:-translate-y-0.5">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17V3" /><path d="m6 11 6 6 6-6" /><path d="M19 21H5" /></svg>
+                    Baixar CV
+                  </a>
+                  
+                  <div class="flex gap-2">
+                    <a href="https://github.com/fasjesus" target="_blank" class="p-2 rounded-lg bg-texto-principal text-zinc-900 hover:bg-gray-200 transition-all hover:-translate-y-0.5" title="GitHub">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1 0-1.3-.5-2.4-1.3-3.2.1-.3.5-1.5-.1-3.2 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1c-.6 1.7-.2 2.9-.1 3.2A4.7 4.7 0 0 0 4 9.4c0 4.7 2.7 5.8 5.5 6.1-.6.5-.9 1.4-.9 2.8v3.5"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fasjesus" target="_blank" class="p-2 rounded-lg bg-texto-principal text-zinc-900 hover:bg-gray-200 transition-all hover:-translate-y-0.5" title="LinkedIn">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="max-w-6xl m-auto w-full px-4 mb-20">
+        <h2 class="titulo-secao">Meus Projetos</h2>
+
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&lt;</button>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+
+                    <div class="card group relative overflow-hidden bg-bg-secundario rounded-lg shadow-lg" onclick="toggleCard(this)"> 
+                        
+                        <div class="card-front transition-opacity duration-300 opacity-100 lg:group-hover:opacity-0 lg:group-hover:pointer-events-none">
+                            <img 
+                                src="assets\images\barema.png" 
+                                alt="Miniatura do Projeto UnificACC" 
+                                class="w-full h-40 object-cover rounded-t-lg"
+                                onerror="this.src='https://placehold.co/300x160/8257E5/E1E1E6?text=Barema'"
+                            >
+                            <div class="px-4 pt-4 pb-4">
+                                
+                                <div class="flex flex-wrap gap-2 mb-1">
+                                  <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-6 h-6">
+                                  </div>
+                                  <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="w-6 h-6">
+                                  </div>
+                                  <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-6 h-6">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card-back absolute inset-0 p-6 flex flex-col justify-start bg-bg-secundario rounded-lg transition-opacity duration-300 opacity-0 pointer-events-none lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto">
+                            <h3 class="mb-4">UnificACC</h3>
+                            <p class="project-intro text-texto-secundario text-justify">
+                                Ferramenta web para auxiliar alunos de computação na montagem de baremas. Nesse projeto, atuei em toda a construção da aplicação, desde o Front-End/ Back-end até a Hospedagem.
+                            </p> 
+                        </div>
+                        
+                        <div class="project-card-links relative z-10 p-4 flex gap-4">
+                            <a href="https://fasjesus.pythonanywhere.com" target="_blank" onclick="event.stopPropagation()" class="flex items-center gap-1 hover:underline">
+                              <span>Acessar</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.74 1.74" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+                            </a>
+                            <a href="https://github.com/fasjesus/unificadorACC" target="_blank" onclick="event.stopPropagation()" class="flex items-center gap-1 hover:underline">
+                              <span>Código</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1 0-1.3-.5-2.4-1.3-3.2.1-.3.5-1.5-.1-3.2 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1c-.6 1.7-.2 2.9-.1 3.2A4.7 4.7 0 0 0 4 9.4c0 4.7 2.7 5.8 5.5 6.1-.6.5-.9 1.4-.9 2.8v3.5"></path></svg>
+                            </a> 
+                        </div>
+                    </div>
+                    
+                    <div class="card group relative overflow-hidden bg-bg-secundario rounded-lg shadow-lg" onclick="toggleCard(this)"> 
+                        
+                        <div class="card-front transition-opacity duration-300 opacity-100 lg:group-hover:opacity-0 lg:group-hover:pointer-events-none">
+                            <img 
+                                src="assets\images\drexreal.png" 
+                                alt="Miniatura do Projeto DrexReal" 
+                                class="w-full h-36 object-cover rounded-t-lg"
+                                onerror="this.src='https://placehold.co/300x160/8257E5/E1E1E6?text=DrexReal'"
+                            >
+                            <div class="px-4 pt-3 pb-4"> 
+                                <div class="flex flex-wrap gap-2 mb-1"> 
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" alt="Angular" class="w-6 h-6">
+                                    </div>
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" alt="Solidity" class="w-6 h-6">
+                                    </div>
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" alt="MetaMask" class="w-6 h-6">
+                                    </div>
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-6 h-6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-back absolute inset-0 p-6 flex flex-col justify-start bg-bg-secundario rounded-lg transition-opacity duration-300 opacity-0 pointer-events-none lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto">
+                             <h3 class="mb-4">DrexReal</h3>
+                            <p class="project-intro text-texto-secundario text-justify">
+                                Aplicação web que simula o DREX. Atuei na construção do protótipo da interface no Figma, telas do front-end e no desenvolvimento dos contratos inteligentes no back-end.
+                            </p> 
+                        </div> 
+                        
+                        <div class="project-card-links relative z-10 p-4 flex gap-4">
+                            <a href="https://projeto-drex-restic36.vercel.app/main" target="_blank" onclick="event.stopPropagation()" class="flex items-center gap-1 hover:underline">
+                              <span>Acessar App</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.74 1.74" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card group relative overflow-hidden bg-bg-secundario rounded-lg shadow-lg" onclick="toggleCard(this)"> 
+                        
+                        <div class="card-front transition-opacity duration-300 opacity-100 lg:group-hover:opacity-0 lg:group-hover:pointer-events-none">
+                            <img 
+                                src="assets\images\pagmask.png" 
+                                alt="Miniatura do Projeto PagMask" 
+                                class="w-full h-40 object-cover rounded-t-lg"
+                                onerror="this.src='https://placehold.co/300x160/8257E5/E1E1E6?text=PagMask'"
+                            >
+                            <div class="px-4 pt-3 pb-4">
+                                <div class="flex flex-wrap gap-2 mb-1">
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-6 h-6">
+                                    </div>
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="w-6 h-6">
+                                    </div>
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" alt="MetaMask" class="w-6 h-6">
+                                    </div>
+                                    <div class="p-1 rounded bg-gray-800 border border-gray-700">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-6 h-6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-back absolute inset-0 p-6 flex flex-col justify-start bg-bg-secundario rounded-lg transition-opacity duration-300 opacity-0 pointer-events-none lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto">
+                            <h3 class="mb-4">PagMask</h3>
+                            <p class="project-intro text-texto-secundario text-justify">
+                                App Android para pagamentos com cripto/DREX integrado ao DrexReal. Realizei o protótipo da interface no Figma.
+                            </p> 
+                        </div> 
+                        
+                        <div class="project-card-links relative z-10 p-4 flex gap-4">
+                            <a href="https://www.youtube.com/watch?v=_PMYZxXqhNw&feature=youtu.be" target="_blank" onclick="event.stopPropagation()" class="flex items-center gap-1 hover:underline">
+                              <span>Demo</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </a>
+                            <a href="https://github.com/KlausAlmeida1/Restic36DrexApp" target="_blank" onclick="event.stopPropagation()" class="flex items-center gap-1 hover:underline">
+                              <span>Código</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1 0-1.3-.5-2.4-1.3-3.2.1-.3.5-1.5-.1-3.2 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1c-.6 1.7-.2 2.9-.1 3.2A4.7 4.7 0 0 0 4 9.4c0 4.7 2.7 5.8 5.5 6.1-.6.5-.9 1.4-.9 2.8v3.5"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn next-btn">&gt;</button>
+        </div>
+    </section>
+
+    <section id="destaques" class="max-w-6xl m-auto w-full px-4 mb-20">
+      <h2 class="titulo-secao">Destaques</h2>
+
+      <div class="grid grid-cols-1 gap-8">
+        
+        <div class="bg-bg-secundario rounded-lg p-6 shadow-lg transition-all duration-300 hover:border-destaque border border-transparent hover:shadow-[0_0_25px_8px_rgba(130,87,229,0.4)] hover:-translate-y-1">
+          <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+            
+            <div class="w-full md:w-2/3">
+              <h3 class="text-2xl font-semibold text-texto-principal mb-2">Trabalho Premiado</h3>
+              <p class="text-texto-secundario">
+                Após minha apresentação no 12º Simpósio da UESC, o trabalho DrexReal, desenvolvido na 2ª Fase da ResTIC36 foi premiado como o 1º Melhor Trabalho de Extensão da área no 4º Seminário de Extensão, destacando-se pela sua solução inovadora no setor financeiro em 2025.
+              </p>
+              <div class="cert-links mt-4">
+                <a href="assets\images\ctdr.pdf" target="_blank" class="flex items-center gap-1">Certificado 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="w-full md:w-1/3 grid grid-cols-2 gap-4">
+              <img 
+                src="assets\images\dr2.jpeg" 
+                alt="Imagem 1 do Prêmio" 
+                class="rounded-lg object-cover aspect-square"
+                onerror="this.src='https://placehold.co/200x200/8257E5/E1E1E6?text=Foto+1'"
+              >
+              <img 
+                src="assets\images\dr1.jpeg" 
+                alt="Imagem 2 do Prêmio" 
+                class="rounded-lg object-cover aspect-square"
+                onerror="this.src='https://placehold.co/200x200/8257E5/E1E1E6?text=Foto+2'"
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-bg-secundario rounded-lg p-6 shadow-lg transition-all duration-300 hover:border-destaque border border-transparent hover:shadow-[0_0_25px_8px_rgba(130,87,229,0.4)] hover:-translate-y-1">
+          <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+            
+            <div class="w-full md:w-2/3">
+              <h3 class="text-2xl font-semibold text-texto-principal mb-2">Seleção Hackathon</h3>
+              <p class="text-texto-secundario">
+                 Minha primeira participação em um Hackathon, onde desenvolvemos uma solução focada na participação Cidadã, o projeto Cidadão Conectado esteve no top 10 dos
+                  20 melhores trabalhos da 1ª Fase da ResTIC36 na Bahia em 2024.
+              </p>
+              <div class="cert-links mt-4">
+                <a href="assets\images\cthck.pdf" target="_blank" class="flex items-center gap-1">Certificado 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="w-full md:w-1/3 grid grid-cols-2 gap-4">
+              <img 
+                src="assets\images\hck1.jpeg" 
+                alt="Imagem 1 do Hackathon" 
+                class="rounded-lg object-cover aspect-square"
+                onerror="this.src='https://placehold.co/200x200/8257E5/E1E1E6?text=Foto+1'"
+              >
+              <img 
+                src="assets\images\hck2.jpeg" 
+                alt="Imagem 2 do Hackathon" 
+                class="rounded-lg object-cover aspect-square"
+                onerror="this.src='https://placehold.co/200x200/8257E5/E1E1E6?text=Foto+2'"
+              >
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="tecnologias" class="max-w-6xl m-auto w-full px-4 mb-20">
+        <h2 class="titulo-secao">Tecnologias</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div class="flex flex-col items-center p-4 bg-bg-secundario rounded-lg border border-bg-card-claro">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" alt="Angular" class="w-12 h-12 mb-2">
+                <span class="text-sm text-texto-secundario">Angular</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-bg-secundario rounded-lg border border-bg-card-claro">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" class="w-12 h-12 mb-2">
+                <span class="text-sm text-texto-secundario">React Native</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-bg-secundario rounded-lg border border-bg-card-claro">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mb-2">
+                <span class="text-sm text-texto-secundario">Node.js</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-bg-secundario rounded-lg border border-bg-card-claro">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-12 h-12 mb-2">
+                <span class="text-sm text-texto-secundario">Python</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-bg-secundario rounded-lg border border-bg-card-claro">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" alt="Solidity" class="w-12 h-12 mb-2">
+                <span class="text-sm text-texto-secundario">Solidity</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-bg-secundario rounded-lg border border-bg-card-claro">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-12 h-12 mb-2">
+                <span class="text-sm text-texto-secundario">Tailwind CSS</span>
+            </div>
+            </div>
+    </section>
+    
+    <footer id="contato" class="max-w-6xl m-auto w-full px-4">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="mb-8 text-center"> <h2 class="text-2xl font-bold text-white mb-2">Vamos conversar?</h2>
+                <p class="text-gray-400">Estou disponível para projetos e oportunidades.</p>
+            </div>
+            
+            <div class="flex justify-center">
+                <a href="mailto:developerflavia@gmail.com" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-700 text-white transition-all text-sm font-bold shadow-lg hover:-translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0l-7.172 6.953a2.25 2.25 0 0 1-3.156 0L2.25 6.75" />
+                    </svg> 
+                    Enviar email
+                </a>
+            </div>
+            
+            <div class="flex flex-wrap justify-center font-medium text-lg gap-4 text-destaque items-center mt-6">
+                <a href="https://github.com/fasjesus" target="_blank" class="flex items-center gap-1 hover:underline">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1 0-1.3-.5-2.4-1.3-3.2.1-.3.5-1.5-.1-3.2 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1c-.6 1.7-.2 2.9-.1 3.2A4.7 4.7 0 0 0 4 9.4c0 4.7 2.7 5.8 5.5 6.1-.6.5-.9 1.4-.9 2.8v3.5"></path></svg>
+                  GitHub
+                </a>
+                
+                <a href="https://www.linkedin.com/in/fasjesus?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="flex items-center gap-1 hover:underline">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  LinkedIn
+                </a>
+                
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-white/5">
+                <p class="text-gray-600 text-xs">© 2025 Flávia Alessandra Santos de Jesus. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
