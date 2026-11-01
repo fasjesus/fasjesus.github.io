@@ -55,7 +55,10 @@ h1 { max-width: 720px; margin-bottom: 26px; font-size: clamp(3rem, 5.4vw, 5.35re
 .highlights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; } .highlight-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.025); transition: border-color .2s, transform .2s; }
 .highlight-card:hover { border-color: rgba(169,119,255,.55); transform: translateY(-4px); } .highlight-icon { display: grid; width: 38px; height: 38px; margin-bottom: 38px; place-items: center; border: 1px solid rgba(169,119,255,.35); border-radius: 50%; color: var(--accent-bright); font-size: 1.15rem; }
 .highlight-card h3 { font-size: 1.2rem; } .highlight-card p { min-height: 72px; } .highlight-card > a { color: var(--accent-bright); font-size: .72rem; font-weight: 700; }
-.gallery-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; margin-top: 18px; } .gallery-grid img { width: 100%; height: 190px; border-radius: 12px; object-fit: contain; object-position: center; background: var(--surface-raised); opacity: .74; filter: grayscale(.2); transition: opacity .2s, filter .2s; }
+.gallery-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; margin-top: 18px; } .gallery-grid img { width: 100%; height: 190px; border-radius: 12px; object-fit: cover; background: var(--surface-raised); opacity: .74; filter: grayscale(.2); transition: opacity .2s, filter .2s; }
+.gallery-grid img:nth-child(1) { object-position: center 34%; }
+.gallery-grid img:nth-child(2) { object-position: center 42%; }
+.gallery-grid img:nth-child(3) { object-position: center 78%; }
 .gallery-grid img:hover { opacity: 1; filter: grayscale(0); } .tech-grid { display: grid; grid-template-columns: repeat(6, 1fr); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); }
 .tech-grid span { padding: 24px 12px; border-right: 1px solid var(--line); color: var(--muted); font-size: .7rem; text-align: center; transition: color .2s, background .2s; } .tech-grid span:last-child { border-right: 0; } .tech-grid span:hover { background: var(--accent-soft); color: var(--text); }
 .site-footer { padding: 130px 0 34px; border-top: 1px solid var(--line); } .footer-content { text-align: center; } .footer-content h2 { margin-bottom: 34px; font-size: clamp(2.5rem, 6vw, 5.5rem); }
