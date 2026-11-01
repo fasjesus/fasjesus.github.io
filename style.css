@@ -55,8 +55,8 @@ h1 { max-width: 720px; margin-bottom: 26px; font-size: clamp(3rem, 5.4vw, 5.35re
 .highlights-grid { display: grid; gap: 18px; } .highlight-card { display: grid; grid-template-columns: minmax(0, 1fr) 320px; align-items: center; gap: 36px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.025); transition: border-color .2s, transform .2s; }
 .highlight-card:hover { border-color: rgba(169,119,255,.55); transform: translateY(-4px); }
 .highlight-card h3 { font-size: 1.2rem; } .highlight-content .mono-label { min-height: 0; margin-bottom: 14px; } .highlight-card a { color: var(--accent-bright); font-size: .72rem; font-weight: 700; }
-.highlight-images { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-.highlight-images img { width: 100%; height: 120px; border-radius: 12px; object-fit: contain; background: var(--surface-raised); opacity: .86; }
+.highlight-images { display: grid; grid-template-columns: repeat(2, 140px); justify-content: end; gap: 10px; }
+.highlight-images img { width: 140px; height: 120px; border-radius: 10px; object-fit: cover; object-position: center 36%; background: var(--surface-raised); opacity: .86; }
 .tech-grid { display: grid; grid-template-columns: repeat(6, 1fr); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); }
 .tech-grid span { padding: 24px 12px; border-right: 1px solid var(--line); color: var(--muted); font-size: .7rem; text-align: center; transition: color .2s, background .2s; } .tech-grid span:last-child { border-right: 0; } .tech-grid span:hover { background: var(--accent-soft); color: var(--text); }
 .site-footer { padding: 130px 0 34px; border-top: 1px solid var(--line); } .footer-content { text-align: center; } .footer-content h2 { margin-bottom: 34px; font-size: clamp(2.5rem, 6vw, 5.5rem); }
@@ -64,7 +64,7 @@ h1 { max-width: 720px; margin-bottom: 26px; font-size: clamp(3rem, 5.4vw, 5.35re
 .reveal { opacity: 0; transform: translateY(18px); animation: reveal .7s ease forwards; } .reveal-delay { animation-delay: .12s; } .reveal-delay-2 { animation-delay: .24s; } @keyframes reveal { to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 60px; } .profile-card { justify-self: start; width: min(100%, 430px); }
-  .projects-grid { grid-template-columns: repeat(2, 1fr); } .project-card:last-child { grid-column: 1 / -1; max-width: calc(50% - 9px); } .highlight-card { grid-template-columns: 1fr; gap: 24px; } .highlight-images img { height: 120px; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); } .project-card:last-child { grid-column: 1 / -1; max-width: calc(50% - 9px); } .highlight-card { grid-template-columns: 1fr; gap: 24px; } .highlight-images { justify-content: start; } .highlight-images img { width: 140px; height: 120px; }
   .tech-grid { grid-template-columns: repeat(3, 1fr); } .tech-grid span:nth-child(3) { border-right: 0; } .tech-grid span:nth-child(n + 4) { border-top: 1px solid var(--line); }
 }
 @media (min-width: 901px) {
@@ -88,7 +88,7 @@ h1 { max-width: 720px; margin-bottom: 26px; font-size: clamp(3rem, 5.4vw, 5.35re
   .hero { min-height: auto; padding: 130px 0 85px; } h1 { font-size: clamp(2.8rem, 15vw, 4.4rem); } .hero-lead { font-size: .95rem; } .profile-image-wrap { height: 310px; }
   .section { padding: 88px 0; } .section-heading { display: block; margin-bottom: 36px; }
   .projects-grid { grid-template-columns: 1fr; } .project-card:last-child { grid-column: auto; max-width: none; } .project-media { height: 165px; }
-  .highlight-images img { height: 110px; }
+  .highlight-images { grid-template-columns: repeat(2, minmax(0, 1fr)); } .highlight-images img { width: 100%; height: 110px; }
   .tech-grid { grid-template-columns: repeat(2, 1fr); } .tech-grid span:nth-child(3) { border-right: 1px solid var(--line); } .tech-grid span:nth-child(even) { border-right: 0; } .tech-grid span:nth-child(n + 3) { border-top: 1px solid var(--line); }
   .section-summary { width: auto; white-space: normal; }
   .footer-bottom { display: block; margin-top: 80px; line-height: 2; text-align: center; } .footer-bottom div { justify-content: center; }
